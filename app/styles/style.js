@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     titleText: {
         fontWeight: 'bold',
-        textAlign: 'center',
         marginTop: 70, 
         marginLeft: 54,
         marginRight: 54
