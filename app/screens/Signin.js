@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 import TitleText from '../components/TitleText';
 import Label from '../components/Label';
 import TextBox from '../components/TextBox';
 import Button from '../components/Button';
+import IconButton from '../components/IconButton';
 import Space from '../components/Space';
 
 const Signin = () => {
@@ -21,7 +21,7 @@ const Signin = () => {
            <Space />
            <Button buttonTitle="Sign in" buttonBgColor="#FFF" buttonTextColor="#0037BA"/>
            <View style={{marginBottom: 10}}></View>
-           <Button buttonTitle="Connect with Facebook" buttonBgColor="#FFF" buttonTextColor="#0037BA"/>
+           <IconButton buttonTitle="Connect with Facebook" buttonBgColor="#FFF" buttonTextColor="#0037BA" iconName="facebook"/>
            <View style={{marginTop: 70}}></View>
            <View style={{flexDirection: 'row', alignSelf: 'center'}}>
             <Text style={{fontSize: 16}}>Don't have an account? </Text><Text style={{fontWeight: 'bold'}}>Sign Up</Text>
