@@ -3,9 +3,9 @@ import { Text } from 'react-native';
 
 import styles from '../styles/style';
 
-const TitleText = ({ textSize, textColor  }) => {
+const TitleText = ({ textSize, textColor, text  }) => {
     return (
-        <Text style={[styles.titleText, {fontSize: textSize, color: textColor}]}>Get-Fit</Text>        
+        <Text style={[styles.titleText, {fontSize: textSize, color: textColor}]}>{text}</Text>        
     )
 }
 

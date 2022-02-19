@@ -4,8 +4,9 @@ export default StyleSheet.create({
     titleText: {
         fontWeight: 'bold',
         textAlign: 'center',
-        marginTop: 100,
-        marginBottom: 300
+        marginTop: 70, 
+        marginLeft: 54,
+        marginRight: 54
     },
     button: {
         alignItems: 'center',
@@ -16,19 +17,34 @@ export default StyleSheet.create({
         marginRight: 10,
         borderRadius: 10,
         alignSelf: 'auto',
-        width: 304,
+        width: 280,
         height: 52,
+        marginLeft: 54,
+        marginRight: 54
     },
     buttonText: {
-        color: '#ffffff',
         fontSize: 18,
         lineHeight: 27
     },
     label: {
         lineHeight: 27,
-        textAlign: 'center'
+        marginLeft: 54,
+        marginRight: 54
     },
     blueBackgroundScreen: {
         backgroundColor: '#E5E5E5'
-    }
+    },
+    input: {
+        height: 40,
+        width: 270,
+        borderWidth: 1,
+        borderBottomColor: '#fff',
+        borderTopWidth: 0,
+        borderLeftWidth: 0,
+        borderRightWidth: 0,
+        paddingLeft: 30,
+        marginLeft: 54,
+        marginBottom: 10
+    },
+
 });
