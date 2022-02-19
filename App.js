@@ -1,16 +1,13 @@
 import React from 'react';
-import {
-  Text,
-  View,
-} from 'react-native';
+import { View } from 'react-native';
 
-import GetFitText from './app/components/GetFitText';
+import HomeScreen from './app/screens/Home';
 
 const App = () => {
 
   return (
       <View style={{flex: 1, alignItems: 'center', backgroundColor:'#fff'}}>
-          <GetFitText />
+         <HomeScreen />
       </View>
   );
 };

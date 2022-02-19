@@ -3,10 +3,10 @@ import { Text } from 'react-native';
 
 import styles from '../styles/style';
 
-const getFitText = () => {
+const TitleText = () => {
     return (
-        <Text style={styles.getFitText}>Get-Fit</Text>        
+        <Text style={styles.titleText}>Get-Fit</Text>        
     )
 }
 
-export default getFitText;
+export default TitleText;
