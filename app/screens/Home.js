@@ -1,16 +1,19 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
 
 import TitleText from '../components/TitleText';
 import Button from '../components/Button';
 import Label from '../components/Label';
  
-const Home = () => {
+const Home = ({ navigation }) => {
     return (
         <View style={{flex: 1, alignItems: 'center', backgroundColor:'#fff'}}>
-            <TitleText textSize={48} textColor="#0037BA"/>
-            <Button buttonTitle="Get Started" buttonBgColor="#0037BA"/>
-            <Label labelTextColor="#0037BA" labelText="Sign in" labelSize={18} />
+            <TitleText textSize={48} textColor="#0037BA" text="Get-Fit"/>
+            <View style={{marginBottom: 300}}></View>
+            <Button buttonTitle="Get Started" buttonBgColor="#0037BA" buttonTextColor="#FFFFFF"/>
+            <TouchableOpacity onPress={() => navigation.navigate('Signin')}>
+                <Label labelTextColor="#0037BA" labelText="Sign in" labelSize={18} />
+            </TouchableOpacity>
         </View>
     )
 }
