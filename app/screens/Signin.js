@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 import TitleText from '../components/TitleText';
 import Label from '../components/Label';
@@ -8,7 +8,7 @@ import Button from '../components/Button';
 import IconButton from '../components/IconButton';
 import Space from '../components/Space';
 
-const Signin = () => {
+const Signin = ({ navigation }) => {
     return (
         <View style={{flex: 1, alignItems:'flex-start', backgroundColor:'#0037BA'}}>
            <TitleText textSize={35} textColor="#FFFFFF" text="Welcome back"/>
@@ -24,7 +24,10 @@ const Signin = () => {
            <IconButton buttonTitle="Connect with Facebook" buttonBgColor="#FFF" buttonTextColor="#0037BA" iconName="facebook"/>
            <View style={{marginTop: 70}}></View>
            <View style={{flexDirection: 'row', alignSelf: 'center'}}>
-            <Text style={{fontSize: 16}}>Don't have an account? </Text><Text style={{fontWeight: 'bold'}}>Sign Up</Text>
+            <Text style={{fontSize: 16}}>Don't have an account? </Text>
+            <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
+                <Text style={{fontWeight: 'bold'}}>Sign Up</Text>
+            </TouchableOpacity>
            </View>
         </View>
     )
