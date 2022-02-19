@@ -3,9 +3,9 @@ import { Text } from 'react-native';
 
 import styles from '../styles/style';
 
-const Label = ({ labelText, labelTextColor }) => {
+const Label = ({ labelText, labelTextColor, labelSize }) => {
     return (
-        <Text style={[styles.label, {color: labelTextColor}]}>{labelText}</Text>
+        <Text style={[styles.label, {color: labelTextColor, fontSize: labelSize}]}>{labelText}</Text>
     )
 }
 
