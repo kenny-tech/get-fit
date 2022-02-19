@@ -25,8 +25,10 @@ export default StyleSheet.create({
         lineHeight: 27
     },
     label: {
-        fontSize: 18,
         lineHeight: 27,
         textAlign: 'center'
+    },
+    blueBackgroundScreen: {
+        backgroundColor: '#E5E5E5'
     }
 });
