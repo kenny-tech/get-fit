@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text } from 'react-native';
 
 import TitleText from '../components/TitleText';
-import Label from '../components/Label';
 import TextBox from '../components/TextBox';
 import Button from '../components/Button';
 import Space from '../components/Space';
