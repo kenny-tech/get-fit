@@ -45,5 +45,20 @@ export default StyleSheet.create({
         marginLeft: 54,
         marginBottom: 10
     },
+    getStarted: {
+        alignItems: 'center',
+        backgroundColor: '#0037BA',
+        color: '#fff',
+        padding: 10,
+        marginTop: 15,
+        marginLeft: 10,
+        marginRight: 10,
+        borderRadius: 10,
+        alignSelf: 'auto',
+        width: 280,
+        height: 52,
+        marginLeft: 54,
+        marginRight: 54
+    }
 
 });
