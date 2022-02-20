@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, Dimensions, Image, Text } from 'react-native';
+import { View, StyleSheet, Dimensions, Image } from 'react-native';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 
 const FirstRoute = () => (
