@@ -57,7 +57,7 @@ const App = () => {
       <Stack.Navigator 
         initialRouteName="Welcome"
         screenOptions={{
-          headerShown: false
+          headerShown: false,
         }}
       >
         <Stack.Screen
