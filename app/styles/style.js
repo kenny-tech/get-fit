@@ -59,6 +59,12 @@ export default StyleSheet.create({
         height: 52,
         marginLeft: 54,
         marginRight: 54
+    }, 
+    cardText: {
+        color: '#000', 
+        fontSize: 18, 
+        marginLeft: 17, 
+        marginTop: 10
     }
 
 });
