@@ -3,19 +3,18 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import styles from '../styles/style';
 import Rate from '../components/Rate';
+import ImageSlider from '../components/ImageSlider';
 
 const Home = () => {
 
     return (
         <View style={{flex: 1, alignItems:'flex-start', backgroundColor:'#FFF'}}>
-           <Text style={styles.cardText}>Today's deal</Text>
-            <View style={{alignSelf: 'center'}}>
-                <Image
-                    source={require('../images/slide1.jpg')}
-                />    
-            </View>    
+           <Text style={styles.cardText}>Today's deal</Text> 
+            <View style={{alignSelf: 'center', flexDirection: 'row'}}>
+                <ImageSlider />
+            </View>
+            
             <Text style={styles.cardText}>Best Sellers</Text>
-
             <View style={{flexDirection: 'row'}}> 
                 <View>
                     <View style={{marginLeft: 17}}>
