@@ -19,8 +19,8 @@ const ImageSlider = () => {
                 onCurrentImagePressed={(index) =>
                   console.log(`image ${index} pressed`)
                 }
-               onCurrentImagePressed={index =>   console.warn(`image ${index} pressed`)}
-             currentImageEmitter={index => console.warn(`current pos is: ${index}`)}
+              //  onCurrentImagePressed={index =>   console.warn(`image ${index} pressed`)}
+            //  currentImageEmitter={index => console.warn(`current pos is: ${index}`)}
                 sliderBoxHeight={200}
                 dotColor="#0037BA"
                 inactiveDotColor="#90A4AE"

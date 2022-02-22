@@ -19,7 +19,7 @@ const BottomTab = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen 
-          name="Home" component={HomeScreen} options={{
+          name="HomeScreen" component={HomeScreen} options={{
           tabBarLabel: 'Home',
           tabBarIcon: () => (
             <Icon name="home" size={30} color="#0037BA" />
