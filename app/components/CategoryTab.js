@@ -26,16 +26,6 @@ const SecondRoute = () => (
     <View style={styles.scene}>
         <View style={{margin: 10}}>
             <Image
-                source={require('../images/shoe.png')}
-            />    
-        </View>    
-        <View style={{margin: 10}}>
-            <Image
-                source={require('../images/bag.png')}
-            />    
-        </View>    
-        <View style={{margin: 10}}>
-            <Image
                 source={require('../images/watch.png')}
             />    
         </View>    
@@ -47,16 +37,6 @@ const ThirdRoute = () => (
         <View style={{margin: 10}}>
             <Image
                 source={require('../images/shoe.png')}
-            />    
-        </View>    
-        <View style={{margin: 10}}>
-            <Image
-                source={require('../images/bag.png')}
-            />    
-        </View>    
-        <View style={{margin: 10}}>
-            <Image
-                source={require('../images/watch.png')}
             />    
         </View>    
     </View>
