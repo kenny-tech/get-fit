@@ -7,9 +7,9 @@ const Line = () => {
             style={{
                 borderBottomColor: '#000',
                 borderBottomWidth: 1,
-                marginLeft: 50,
+                marginLeft: 33,
                 marginTop: 10,
-                width: 250
+                width: 340
             }}
         />
     )
