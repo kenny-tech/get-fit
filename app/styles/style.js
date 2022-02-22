@@ -65,6 +65,15 @@ export default StyleSheet.create({
         fontSize: 18, 
         marginLeft: 17, 
         marginTop: 10
+    },
+    wishlistTitle: {
+        fontSize: 20, 
+        color: '#000', 
+        marginLeft: 33, 
+        marginTop: 10, 
+        marginRight: 200, 
+        fontWeight: '300', 
+        lineHeight: 30
     }
 
 });

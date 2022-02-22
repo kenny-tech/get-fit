@@ -4,7 +4,8 @@ import MultiSlider from '@ptomasroos/react-native-multi-slider';
 
 import Line from '../components/Line';
 import Checkbox from '../components/Checkbox';
-import PriceRange from '../components/PriceRange';
+import Rate from '../components/Rate';
+import styles from '../styles/style';
 
 const Wishlist = () => {
 
@@ -22,7 +23,7 @@ const Wishlist = () => {
             </View>
             <Line />
             <View>
-                <Text style={{fontSize: 20, color: '#000', marginLeft: 33, marginTop: 10, marginRight: 200, fontWeight: '300', lineHeight: 30}}>Size</Text>
+                <Text style={styles.wishlistTitle}>Size</Text>
                 <View style={{marginLeft: 50}}>
                     <Checkbox label="X Small"/>
                     <Checkbox label="Small"/>
@@ -32,7 +33,7 @@ const Wishlist = () => {
                 </View>
             </View>
             <View>
-                <Text style={{fontSize: 20, color: '#000', marginLeft: 33, marginTop: 10, marginRight: 200, fontWeight: '300', lineHeight: 30}}>Price</Text>
+                <Text style={styles.wishlistTitle}>Price</Text>
                 <View style={{marginLeft: 33}}>
                     <MultiSlider
                         values={[values[0], values[1]]}
@@ -40,12 +41,46 @@ const Wishlist = () => {
                         onValuesChange={multiSliderValuesChange}
                         min={0}
                         max={1000}
-                        step={100}
+                        step={100}                       
                     />
-                    <Text style={{color: '#000'}}>{values[0]}</Text>
-                    <Text style={{color: '#000'}}>{values[1]}</Text>
                 </View>
-            </View>
+                <View>
+                    <View style={{flexDirection:'row', marginBottom: 10}}>
+                        <View style={{marginLeft: 80, marginRight: -30}}>
+                            <Text style={{color: '#000', fontSize: 20, fontWeight: '300'}}>From</Text>
+                        </View>
+                        <View style={{marginLeft: 80, flexDirection:'row'}}>
+                            <View style={{borderColor: '#808080', width: 60, height: 30, borderWidth: 1}}><Text style={{color: '#000', fontSize: 20, fontWeight: '300', alignSelf: 'center'}}>${values[0]}</Text></View>
+                        </View>
+                    </View>
+                </View>
+                <View>
+                    <View style={{flexDirection:'row'}}>
+                        <View style={{marginLeft: 80, marginRight: -5}}>
+                            <Text style={{color: '#000', fontSize: 20, fontWeight: '300'}}>To</Text>
+                        </View>
+                        <View style={{marginLeft: 80, flexDirection:'row'}}>
+                            <View style={{borderColor: '#808080', width: 60, height: 30, borderWidth: 1}}><Text style={{color: '#000', fontSize: 20, fontWeight: '300', alignSelf: 'center'}}>${values[1]}</Text></View>
+                        </View>
+                    </View>
+                </View>
+            </View>  
+
+            <View>
+                <Text style={styles.wishlistTitle}>Color</Text>
+                <View style={{marginLeft: 80}}>
+                    <View style={{flexDirection: 'row'}}>
+                        <View style={{backgroundColor: '#ABAC62', width: 14, height: 14, marginRight: 10, marginTop: 4}}/>
+                        <Text style={{color: '#000', fontSize: 16, fontWeight: '300'}}>Gold</Text>
+                    </View>
+                </View>
+            </View>      
+            <View>
+                <Text style={styles.wishlistTitle}>Product Rating</Text>
+                <View style={{marginLeft: 80, alignSelf: 'flex-start'}}>
+                    <Rate />
+                </View>
+            </View>      
         </View>
     )
 }
