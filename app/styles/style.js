@@ -74,6 +74,15 @@ export default StyleSheet.create({
         marginRight: 200, 
         fontWeight: '300', 
         lineHeight: 30
-    }
+    },
+    search: {
+        height: 34,
+        width: 366,
+        backgroundColor: '#FFF',
+        color: '#000',
+        borderRadius: 40,
+        alignSelf: 'center',
+        fontSize: 12,
+    },
 
 });
