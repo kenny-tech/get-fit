@@ -17,9 +17,15 @@ const Tab = createBottomTabNavigator()
 
 const BottomTab = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{
+      headerTitleAlign: "center",    
+      headerStyle: {
+        backgroundColor: '#0037BA',
+      },
+      headerTintColor: '#fff',
+    }}>
       <Tab.Screen 
-          name="HomeScreen" component={HomeScreen} options={{
+          name="Get-Fit" component={HomeScreen} options={{
           tabBarLabel: 'Home',
           tabBarIcon: () => (
             <Icon name="home" size={30} color="#0037BA" />
@@ -63,7 +69,12 @@ const App = () => {
         <Stack.Screen
           name="Home"
           component={BottomTab}
-          options={{ headerShown: false }}
+          options={{ 
+            headerShown: false, 
+            headerStyle: {
+              backgroundColor: '#f4511e',
+            },
+          }}
         />
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="Signin" component={SigninScreen} />
