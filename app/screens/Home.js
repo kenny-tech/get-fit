@@ -1,19 +1,22 @@
 import React from 'react';
 
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TextInput } from 'react-native';
 import styles from '../styles/style';
 import Rate from '../components/Rate';
 import ImageSlider from '../components/ImageSlider';
+import SearchInput from '../components/SearhInput';
 
 const Home = () => {
 
     return (
         <View style={{flex: 1, alignItems:'flex-start', backgroundColor:'#FFF'}}>
+            <View style={{backgroundColor: '#0037BA', width: '100%', height: 50, borderColor: '#0037BA'}}>
+                <SearchInput />
+            </View>
            <Text style={styles.cardText}>Today's deal</Text> 
             <View style={{alignSelf: 'center', flexDirection: 'row'}}>
                 <ImageSlider />
             </View>
-            
             <Text style={styles.cardText}>Best Sellers</Text>
             <View style={{flexDirection: 'row'}}> 
                 <View>
