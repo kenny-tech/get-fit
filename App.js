@@ -27,30 +27,50 @@ const BottomTab = () => {
       <Tab.Screen 
           name="Get-Fit" component={HomeScreen} options={{
           tabBarLabel: 'Home',
-          tabBarIcon: () => (
-            <Icon name="home" size={30} color="#0037BA" />
-          ),
+          tabBarIcon: ({ focused, color, size }) => {
+            const icon = focused ? 'home' : 'home';
+            return (
+              <Icon name={icon} color={color} size={size} />
+            );
+          },
+          tabBarActiveTintColor: '#0037BA',
+          tabBarInactiveTintColor: '#997E7E'
       }}/>
       <Tab.Screen 
         name="Category" component={CategoryScreen} options={{
         tabBarLabel: 'Category',
-        tabBarIcon: () => (
-          <Icon name="list" size={30} color="#0037BA" />
-        ),
+        tabBarIcon: ({ focused, color, size }) => {
+          const icon = focused ? 'list' : 'list';
+          return (
+            <Icon name={icon} color={color} size={size} />
+          );
+        },
+        tabBarActiveTintColor: '#0037BA',
+        tabBarInactiveTintColor: '#997E7E'
       }}/>
        <Tab.Screen 
         name="Wishlist" component={WishlistScreen} options={{
         tabBarLabel: 'Wishlist',
-        tabBarIcon: () => (
-          <Icon name="heart" size={30} color="#0037BA" />
-        ),
+        tabBarIcon: ({ focused, color, size }) => {
+          const icon = focused ? 'heart' : 'heart';
+          return (
+            <Icon name={icon} color={color} size={size} />
+          );
+        },
+        tabBarActiveTintColor: '#0037BA',
+        tabBarInactiveTintColor: '#997E7E'
       }}/>
       <Tab.Screen 
         name="Profile" component={ProfileScreen} options={{
         tabBarLabel: 'Profile',
-        tabBarIcon: () => (
-          <Icon name="user-circle" size={30} color="#0037BA" />
-        ),
+        tabBarIcon: ({ focused, color, size }) => {
+          const icon = focused ? 'user-circle' : 'user-circle';
+          return (
+            <Icon name={icon} color={color} size={size} />
+          );
+        },
+        tabBarActiveTintColor: '#0037BA',
+        tabBarInactiveTintColor: '#997E7E'
       }}/>
     </Tab.Navigator>
   );
