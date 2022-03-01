@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <View style={{flex: 1, alignItems:'flex-start', backgroundColor:'#FFF'}}>
-            <View style={{backgroundColor: '#0037BA', width: '100%', height: 50, borderColor: '#0037BA'}}>
+            <View style={{backgroundColor: '#0037BA', width: '100%', height: 60, borderColor: '#0037BA'}}>
                 <SearchInput />
             </View>
            <Text style={styles.cardText}>Today's deal</Text> 
